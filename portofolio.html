@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Portofolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #ffe6f0;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffcce0;
+      padding: 60px 20px;
+      border-bottom: 3px solid #f8b3c5;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin-top: 15px;
+      color: #e75480;
+    }
+
+    header p {
+      color: #7a4b61;
+    }
+
+    nav {
+      background-color: #ffb6c1;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e75480;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      color: #e75480;
+      margin-bottom: 20px;
+    }
+
+    .about, .projects, .contact {
+      background: #fff0f5;
+      margin: 20px auto;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .project {
+      background-color: #ffd6e8;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: scale(1.05);
+    }
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .project p{
+      text-align:center;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #ffcce0;
+      color: #7a4b61;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    button {
+      background-color: #e75480;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #d64371;
+    }
+
+    .contact a {
+      color: #e75480;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      .project-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="ndra.jpg" alt="Foto Profil">
+    <h1>Aku Nadira!</h1>
+    <p>Ini adalah project web pertama ku!</p>
+  </header>
+
+  <!-- Navigasi -->
+  <nav>
+    <a href="#tentang">Tentang</a>
+    <a href="#proyek">Pendidikan</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <!-- Tentang -->
+  <section id="tentang" class="about">
+    <h2>Tentang Saya</h2>
+    <p>Hai! Namaku Nadira Aqmalia Putri.<br> Aku lahir di Purwakarta, tepatnya pada tanggal 3 Juni 2010. Aku anak ke 3 dari 3 bersaudara. Aku ambivert—kadang bisa ceria dan rame, tapi di waktu lain bisa jadi pendiam juga. Aku suka banget yapping ke orang-orang terdekat atau yang aku rasa nyaman.</p><br>
+    <div class="project-list">
+      <div class="project">
+        <h3>Hobi & Kesukaan</h3>
+        <p>Nyanyi udah jadi hobi aku sejak kecil.<br> Aku suka banget nyanyi di mana aja, entah pas lagi santai, mandi, atau lagi sendiri. Rasanya nyanyi tuh bikin hati lebih lega.Makanan favorit aku seblak, dan dimsum mentai, ke 2 makanan itu ENAKK BANGETT jadi aku suka. Kalo minuman, aku suka yg matcha/green tea, BENER BENER SUKAA BANGETT!!</p>
+      </div>
+      <div class="project">
+        <h3>Cita-cita</h3>
+        <p>Aku punya cita-cita jadi seorang penyanyi!<br> Soalnya dari kecil aku udah suka banget nyanyi. Buat aku, nyanyi itu cara seru buat berekspresi dan bikin orang lain ikut senang juga.Dan aku berharap aku bisa mencapai semua cita cita aku, aminn..</p>
+      </div>
+      <div class="project">
+        <h3>Prestasi & Pengalaman</h3>
+        <p>Aku pernah tampil dance di depan banyak orang pas acara perpisahan SD waktu kelas 3. Selain itu, aku juga pernah juara lomba solo vokal tingkat kecamatan sejak 2019 tepatnya waktu kelas 4. Saat SMP, aku langganan juara kelas dari kelas 7 sampai kelas 9. Aku juga pernah jadi ketua kelas pas SMP, waktu kelas 7 dan kelas 9. Kelas 8 ngga, soalnya lagi pengen istirahat dulu, cape hhe..</p>
+      </div>
+  </section>
+
+  <!-- Proyek -->
+  <section id="proyek" class="projects">
+    <h2>Pendidikan Saya</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>SD</h3>
+        <p>📍SD Negeri 2 Sukajaya<br>
+        Masuk tahun 2016 — Lulus tahun 2021</p>
+      </div>
+      <div class="project">
+        <h3>SMP</h3>
+        <p>📍SMP Negeri 1 Sukatani<br>
+        Masuk tahun 2021 — Lulus tahun 2025</p>
+      </div>
+      <div class="project">
+        <h3>SMK</h3>
+        <p>📍SMK Negeri 2 Purwakarta<br>
+        2025! Saat ini</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="contact">
+    <h2>Hubungi Saya</h2>
+    <p>Email: <b>nadiraaqmalia011@gmail.com</b></p>
+    <p>Instagram: <a href="https://www.instagram.com/ndrqmliaa/" target="_blank">@ndrqmliaa</a></p>
+
+    <!-- Tombol WhatsApp -->
+    <button onclick="kirimWA()">Kirim Pesan via WhatsApp</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 | Portofolio oleh Nadira Aqmalia Putri
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function kirimWA() {
+      const nomor = "62819094109820";
+      const pesan = "Halo kak, saya lihat portofolio kamu dan ingin berkenalan!";
+      const url = "https://wa.me/6281909410982?text=" + encodeURIComponent("Halo kak, saya lihat portofolio kamu dan ingin berkenalan!");
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
